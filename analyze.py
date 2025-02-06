@@ -32,7 +32,7 @@ outout_text = (
 
 # 결과를 텍스트 파일에 저장
 # open('output.txt', 'w'): 텍스트 파일을 쓰기 모드로 열는법
-with open('output.txt', 'w') as file:
+with open('wine_analysis_project/output.txt', 'w') as file:
     file.write(outout_text)
 
 print("분석이 완료되었습니다.결과는 'output.txt에 저장되었습니다.")
