@@ -6,12 +6,13 @@
 
 ## **프로젝트 구조**
 ```
-|-- analyze.py             # 데이터셋 분석 스크립트
-|-- run_analysis.sh        # 분석 스크립트를 실행하고 로그 저장
-|-- upload_to_github.sh    # GitHub 자동 업로드 스크립트
-|-- environment.yml        # Conda 환경 설정 파일
-|-- output.txt             # 분석 결과 출력 파일
-|-- log.txt                # 분석 실행 로그 파일
+|-- wine_analysis_project
+    |-- analyze.py             # 데이터셋 분석 스크립트
+    |-- run_analysis.sh        # 분석 스크립트를 실행하고 로그 저장
+    |-- upload_to_github.sh    # GitHub 자동 업로드 스크립트
+    |-- environment.yml        # Conda 환경 설정 파일
+    |-- output.txt             # 분석 결과 출력 파일
+    |-- log.txt                # 분석 실행 로그 파일
 ```
 
 ---
@@ -39,17 +40,19 @@
 
 ### **1단계: Conda 환경 생성**
 ```bash
-conda env create -f environment.yml
+conda env create -f wine_analysis_project/environment.yml
 conda activate wine_analysis_env
 ```
 
 ### **2단계: 분석 실행**
 ```bash
+cd wine_analysis_project
 ./run_analysis.sh
 ```
 
 ### **3단계: GitHub 업로드**
 ```bash
+cd wine_analysis_project
 ./upload_to_github.sh
 ```
 
