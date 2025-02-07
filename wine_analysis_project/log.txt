@@ -1,3 +1,7 @@
 🚀 분석을 시작합니다...
-분석이 완료되었습니다. 결과는 'wine_analysis_project/output.txt'에 저장되었습니다.
+Traceback (most recent call last):
+  File "/home/iujeong/wine_analysis_project/analyze.py", line 27, in <module>
+    output_file = os.path.join(output_dir, "output.txt")
+                               ^^^^^^^^^^
+NameError: name 'output_dir' is not defined
 ✅ 분석이 완료되었습니다. 로그는 'wine_analysis_project/log.txt'에서 확인하세요!

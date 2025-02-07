@@ -22,9 +22,6 @@ mean_std_info = df.aggregate(['mean', 'std']).T    #.T: 결과를 전치(transpo
 alcohol_max = df['alcohol'].max()
 alcohol_min = df['alcohol'].min()
 
-# 저장할 폴더 생성 (없으면 자동 생성)
-output_dir = "wine_analysis_project"
-os.makedirs(output_dir, exist_ok=True)
 
 # 결과 저장 파일 경로
 output_file = os.path.join(output_dir, "output.txt")
