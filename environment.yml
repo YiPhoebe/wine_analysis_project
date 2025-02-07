@@ -1,3 +1,7 @@
+# conda env create -f environment.yml  # 환경 생성
+# conda activate wine_analysis  # 환경 활성화
+
+
 name: bogdong
 channels:
   - defaults
